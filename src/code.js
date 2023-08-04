@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Modal from "react-bootstrap/Modal";
 import "./code.css";
 const Code = (props) => {
@@ -18,6 +18,7 @@ const Code = (props) => {
     return result;
   }
 
+
   function checkAnswer() {
     if (answer === guess) {
       let newList = [...props.classList];
@@ -25,6 +26,10 @@ const Code = (props) => {
       props.setClassList(newList);
       console.log("일치");
       props.setModalShow(false);
+      if (window.confirm("재조회하시겠습니까?")) {
+        console.log("수강신청 실패.");
+      } else {
+      }
     } else {
       console.log("불일치");
     }

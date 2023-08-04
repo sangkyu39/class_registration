@@ -1,38 +1,97 @@
-.App {
+.menubar-img {
+  width: 80%;
+}
+
+.menu-img {
+  width: 120%;
+}
+
+.box {
+  margin: none;
+  padding : 0;
+}
+
+.apply-btn {
+  background-color: #c30e2e;
+  display: inline-block;
+  padding : 0px 6px;
+  border-radius: 2px;
+  color : white;
+  font-size: 13.33px;
+  height: 27px;
+  width: auto !important;
+  cursor: pointer;
   text-align: center;
+  vertical-align: middle;
+  margin : auto;
+  padding: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.apply-btn:hover {
+  background-color: #9f151A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.class-list {
+  border : 1px solid black !important;
+  margin-left: 0.5%;
+  width: 120%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.class-name{ 
+  border-left: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-div {
+  margin: none;
+  padding-left: auto;
+}
+.menubar {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  position: relative;
+  z-index:1;
+  /* 이외에 추가적인 스타일링 코드... */
+}
+
+.menubar-img {
+  width: 100%;
+}
+
+.apply-btn {
+  background-color: #c30e2e;
+  display: inline-block;
+  padding : 0px 6px;
+  border-radius: 2px;
+  color : white;
+  font-size: 13.33px;
+  height: 27px;
+  width: auto !important;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  margin : auto;
+  padding: auto;
+}
+
+.apply-btn:hover {
+  background-color: #9f151A;
+}
+
+.class-list {
+  border : 1px solid black !important;
+}
+
+.class-name{ 
+  border-left: 1px solid black;
+}
+
+.btn-div {
+  margin: none;
+  padding-left: auto;
+}
+
+.modal {
+  background-color: rgba(0 0 0 0);
 }
